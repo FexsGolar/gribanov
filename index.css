@@ -48,6 +48,16 @@
     list-style-type: none;
 }
 
+.menu__item-link {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.menu__item-link:hover {
+    opacity: .5;
+}
+
 .section:first-of-type {
     margin-top: 0;
 }
@@ -85,6 +95,16 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
+}
+
+.section__link-item {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.section__link-item:hover {
+    opacity: .5;
 }
 
 .footer__text {
