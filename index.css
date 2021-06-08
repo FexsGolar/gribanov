@@ -237,6 +237,7 @@
     }
     .header {
         background-position: 79%;
+        border: none;
     }
     .header__title {
         display: none;
