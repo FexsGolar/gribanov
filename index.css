@@ -22,14 +22,28 @@
 }
 
 .header__title {
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 20px;
-    align-self: flex-end;
     letter-spacing: 2px;
+    margin-left: 16px;
+    max-width: 650px;
+}
+
+.header__title_type_mobile {
+    display: none;
+}
+
+.header__title-name {
+    font-size: 56px;
+}
+
+.header__title-link {
+    text-decoration: none;
+    color: black;
 }
 
 .header__subtitle {
-    font-size: 20px;
+    font-size: 16px;
     align-self: flex-start;
     margin-left: 20px;
 }
@@ -43,30 +57,6 @@
     justify-content: space-between;
     padding: 20px 0 20px;
     position: sticky;
-}
-
-@media screen and (max-width: 767px) {
-    .menu {
-        flex-direction: column;
-    }
-    .menu__item {
-        margin-top: 15px;
-    }
-    .menu__item-link-button {
-        min-width: 280px;
-    }
-    .menu__item:first-of-type {
-        margin-top: 0;
-    }
-    .footer__list {
-        flex-direction: column;
-    }
-    .footer__list-item {
-        margin-top: 30px;
-    }
-    .header {
-        background-position: 79%;
-    }
 }
 
 .menu__item {
@@ -91,7 +81,7 @@
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;
-    width: 170px;
+    max-width: 170px;
     height: 60px;
 }
 
@@ -224,4 +214,53 @@
 .footer__text {
     font-size: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu__item {
+        margin-top: 15px;
+    }
+    .menu__item-link-button {
+        min-width: 280px;
+    }
+    .menu__item:first-of-type {
+        margin-top: 0;
+    }
+    .footer__list {
+        flex-direction: column;
+    }
+    .footer__list-item {
+        margin-top: 30px;
+    }
+    .header {
+        background-position: 79%;
+    }
+    .header__title {
+        display: none;
+    }
+    .header__title_type_mobile {
+        display: block;
+        font-size: 20px;
+    }
+    .header__title-name_type_mobile {
+        font-size: 30px;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+    }
+    .section__title-link {
+        margin: 0 auto;
+    }
+    .section__text-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .section__image {
+        float: none;
+        align-self: center;
+    }
 }
